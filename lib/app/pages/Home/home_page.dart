@@ -1,5 +1,10 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:thera/app/pages/Home/widgets/categorias.dart';
 import 'package:thera/app/pages/Home/widgets/top.dart';
+import 'package:thera/app/pages/Home/widgets/transmiciones.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -8,6 +13,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFFF4E0D6),
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         top: true,
         child: Container(
@@ -24,16 +30,16 @@ class HomePage extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             children: [
               const Expanded(
-                flex: 4,
+                flex: 3,
                 child: TopPageHome(),
               ),
-              Expanded(
-                flex: 6,
-                child: Container(),
-              ),
-              Expanded(
+              const Expanded(
                 flex: 4,
-                child: Container(),
+                child: CategoriasCard(),
+              ),
+              const Expanded(
+                flex: 3,
+                child: Transmiciones(),
               ),
             ],
           ),

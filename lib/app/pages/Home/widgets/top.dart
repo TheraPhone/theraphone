@@ -16,7 +16,7 @@ class TopPageHome extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         children: [
           Expanded(
-            flex: 5,
+            flex: 4,
             child: SizedBox(
               height: double.infinity,
               width: double.infinity,
