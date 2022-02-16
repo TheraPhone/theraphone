@@ -1,10 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:thera/app/settings/Routes.dart';
 import 'package:thera/app/settings/pages.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding
+      .ensureInitialized(); // para firebase de inicie de forma segura
+  await Firebase.initializeApp(); // llamar a firebase
+
   SystemChrome.setSystemUIOverlayStyle(
     // ignore: prefer_const_constructors
     SystemUiOverlayStyle(

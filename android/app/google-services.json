@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "46761230310",
+    "firebase_url": "https://thera-84f2b-default-rtdb.firebaseio.com",
+    "project_id": "thera-84f2b",
+    "storage_bucket": "thera-84f2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46761230310:android:5d3ca8d3f66a6cf983a027",
+        "android_client_info": {
+          "package_name": "com.example.thera"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46761230310-9fqmba2v0v77mv9sdsq2jer4oershmfo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-aqI_h4KvZe3kFlSSMtBI7nxZDh_JjwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46761230310-9fqmba2v0v77mv9sdsq2jer4oershmfo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

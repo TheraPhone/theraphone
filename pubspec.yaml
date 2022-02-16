@@ -37,6 +37,8 @@ dependencies:
   get:
   auto_size_text: ^3.0.0
   google_fonts: ^2.3.1
+  firebase_core:
+  cloud_firestore:
 
 dev_dependencies:
   flutter_test:
