@@ -13,20 +13,6 @@ class SplashController extends GetxController {
     CollectionReference collect =
         FirebaseFirestore.instance.collection("the_users");
 
-    // QuerySnapshot users = await collect.get();
-
-    // for (var item in users.docs) {
-    //   log(item.id);
-    //   log(item.data().toString());
-    //   log(item.metadata.hasPendingWrites.toString());
-    // }
-    // var neda = collect.add({
-    //   "user_nombre": 'usertest',
-    //   'user_creacionfecha': 'testing',
-    //   'user_email': 'test@test.com',
-    //   'tipo_user': 'dba',
-    //   'user_clave': 'testinggg',
-    // }).catchError((e) => print("errorrrrrrrr"));
     var neda = collect.doc('t_users').set({
       "user_nombre": 'usertest',
       'user_creacionfecha': 'testing',
